@@ -14,10 +14,13 @@
 - Clone respective repository or download zip.
 
 
-# Running features
+# Running features via command line
 - Goto project directory.
 - Use "**mvn clean install**" command to run features.
 - Use "**mvn clean install -Dbrowser=browser_name**" to run features on specific browser. framework supports both chrome and firefox browsers and default browser is chrome.
+
+# Running features via IDE
+**In eclipse IDE, right click on the project --> Run As --> Maven Install**
 
 # Packages and features
 
