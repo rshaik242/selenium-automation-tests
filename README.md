@@ -1,7 +1,7 @@
 # selenium-automation-tests
 
 # Pre-requisites
-- <a href="https://java.com/en/download/manual.jsp" target="_blank">Java</a>
+- <a href="https://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk" target="_blank">Java</a>
 - <a href="https://maven.apache.org/download.cgi" target="_blank">Maven</a>
 - <a href="https:https://eclipse.org/downloads/" target="_blank">Eclipse</a>
 - Eclipse Plugins
