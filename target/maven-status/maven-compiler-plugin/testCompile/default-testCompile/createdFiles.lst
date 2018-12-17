@@ -1,7 +1,0 @@
-stepDefinitions\InitialiseDriver.class
-pageObjects\SoundsPage.class
-pageObjects\HiphopPage.class
-pageObjects\Page.class
-stepDefinitions\Sounds_StepDefinitions.class
-testRunner\TestRunner.class
-pageObjects\StationsPage.class
