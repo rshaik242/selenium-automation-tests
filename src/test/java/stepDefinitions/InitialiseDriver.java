@@ -31,6 +31,7 @@ public class InitialiseDriver {
 			break;
 		case "firefox":
 			driver = new FirefoxDriver();
+			System.setProperty("webdriver.gecko.driver", "src/test/java/drivers/geckodriver.exe");
 			driver.manage().window().maximize();
 			break;
 		default:
