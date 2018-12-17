@@ -16,5 +16,28 @@
 
 # Running features
 - Goto project directory.
-- Use "mvn test" command to run features.
-- Use "mvn test -Dbrowser=browser_name" to run features on specific browser.
+- Use "**mvn clean install**" command to run features.
+- Use "**mvn clean install -Dbrowser=browser_name**" to run features on specific browser. framework supports both chrome and firefox browsers and default browser is chrome.
+
+# Packages and features
+
+### src/test/java/drivers
+This package contains driver executables for chrome and firefox drivers and its references in initialiseDriver.java file.
+
+### src/test/java/pageObjects
+This package contains all the page objects classes and each page object class has all the relevant element locators and methods within that page.
+
+### src/test/java/stepDefinitions
+This package contains step definition files.
+
+### src/test/java/testRunner
+This package contains cucumber test runner class and initialiseDriver class
+
+### src/test/resources/features
+This package contains .feature files, please refer part2.feature for part 2 BDD scenarios
+
+
+
+
+
+
