@@ -25,7 +25,7 @@ public class InitialiseDriver {
 		case "chrome":
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("start-maximized");
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Muneer\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/test/java/drivers/chromedriver.exe");
 			driver = new ChromeDriver(chromeOptions);
 			
 			break;
