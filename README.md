@@ -38,7 +38,11 @@ This package contains cucumber test runner class and initialiseDriver class
 
 ### src/test/resources/features
 This package contains .feature files, please refer part2.feature for part 2 BDD scenarios
+#### sounds-part1.feature : has Part 1 Scenarios of the test and all scenarios are automated
+#### sounds-part2.feature : has Part 2 Scenarios of the test and all scenarios are automated
 
+### Cucumber reports
+Once Tests are excuted then refer directory target/cucumber-reports/index.html for generated report
 
 
 
