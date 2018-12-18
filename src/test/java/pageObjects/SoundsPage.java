@@ -15,6 +15,9 @@ public class SoundsPage extends Page {
 	// elements
 	@FindBy(id = "sn__listen-logo")
 	public WebElement listen_logo;
+	
+	@FindBy(id = "sn__logo-link")
+	public WebElement sounds_logo;
 
 	@FindBy(linkText = "Stations")
 	public WebElement stations_link;
@@ -24,6 +27,14 @@ public class SoundsPage extends Page {
 
 	@FindBy(css = ".sc-c-brand--radio2")
 	public WebElement radio2_logo;
+	
+	@FindBy(css = ".gs-u-display-inline-block:nth-child(1) > .sc-c-paddle__button")
+	public WebElement previousArrow;
+	
+	@FindBy(css = ".gs-u-display-inline-block:nth-child(2) > .sc-c-paddle__button")
+	public WebElement nextArrow;
+	
+	// .gs-u-display-inline-block:nth-child(1) > .sc-c-paddle__button
 
 	// constructor
 	public SoundsPage() {
@@ -56,7 +67,17 @@ public class SoundsPage extends Page {
 	public boolean isRadio2LogoDisplayed() {
 		return radio2_logo.isDisplayed();
 	}
-
+	
+	public boolean isSoundsLogoDisplayed() {
+		return sounds_logo.isDisplayed();
+	}
+	
+	public void clickOnSoundsLogo() {
+		if(isSoundsLogoDisplayed()) {
+			sounds_logo.click();
+		};
+	}
+	
 	public String isSoundsPageDisplayed() {
 		String title = driver.findElement(By.id("sn__logo-link")).getAttribute("aria-label");
 		return title;
@@ -77,4 +98,31 @@ public class SoundsPage extends Page {
 		hiphopPage = new HiphopPage();
 		return hiphopPage;
 	}
+
+	public void clickArrow(String arrow) throws InterruptedException {
+		if (arrow.contains("right")) {
+		     nextArrow.click();;
+		} else if (arrow.contains("left")) {
+		   previousArrow.click();
+		}
+		
+	}
+	
+	public boolean isPreviousArrowEnabled() {
+		boolean isEnabled = previousArrow.isEnabled();
+		return isEnabled;
+	}
+	
+	public boolean isNextArrowEnabled(String arrow) {
+		boolean isEnabled = false;
+		if (arrow.contains("right")) {
+			isEnabled = nextArrow.isEnabled();
+		}
+		if (arrow.contains("left")) {
+			isEnabled = previousArrow.isEnabled();
+		}
+
+		return isEnabled;
+	}
+	
 }
